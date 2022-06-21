@@ -1,0 +1,161 @@
+@font-face {
+    font-family: gotham;
+    src: url(/font/gotham-rounded/GothamRoundedBook_21018.ttf);
+}
+
+@font-face {
+    font-family: gotham-lite;
+    src: url(/font/gotham-rounded/GothamRoundedLight_21020.ttf);
+}
+
+@font-face {
+    font-family: gotham-md;
+    src: url(/font/gotham-rounded/GothamRoundedMedium_21022.ttf);
+}
+
+* {font-family: gotham;}
+
+body {padding-top: 115px;}
+
+header {background-color: white;}
+
+footer {background-color: #004c97; color: #fff;}
+
+a:link {color: #004c97; text-decoration: none;}
+a:visited {text-decoration: none;}
+a:active {text-decoration: none;}
+
+.color {color: #004c97 !important;}
+.color:hover {color: #ff8200 !important;}
+
+.topup {color: #ff3381 !important;}
+.topup:hover {color: #ff8200 !important;}
+
+#globalselector {
+    background-color: #004c97;
+    color: #fff !important;
+    font-size: 13px;
+}
+
+#personal {background-color: #ff8200; font-family: gotham;}
+#personal:hover {font-weight: 650;}
+#business:hover {font-weight: 650;}
+#str:hover {font-weight: 650;}
+
+.globaltopnavselect {color: #fff !important;}
+
+.topup :link {color: #ff3381 !important;}
+.topup :visited {color: #ff3381 !important;}
+.topup :hover {color: #004c97 !important;}
+
+#navbarSupportedContent {height: 102vh;}
+
+.notice_banner {
+    background-color: #f8f8f8;
+    color: #004c97;
+    font-size: 14px;
+}
+
+.notice_banner :visited {color: #004c97;}
+.notice_banner :hover {text-decoration: underline;}
+
+.offcanvas-title {color: #004c97;}
+
+
+/* images folder content */
+
+.hambtn {
+    background-image: url("/images/list-icon-hamburger-menu.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.globalnavlogo {
+    background-image: url("/images/gtt_logo.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 51px;
+    height: 37px;
+}
+
+.chevronright {
+    content: url(/images/chevron-right.svg);
+    width: 10px;
+    height: 10px;
+    margin-bottom: -1px;
+}
+
+.person-fill {
+    content: url(/images/account-person-fill.svg);
+    width: 33px;
+    height: 33px;
+}
+
+.ytlogo {
+    content: url(/images/yt-logo-icon.svg);
+}
+
+.fblogo {
+    content: url(/images/f_logo_RGB-White_58.png);
+    width: 30px;
+    height: 30px;
+}
+
+.iglogo {
+    content: url(/images/Instagram_Glyph_White.svg);
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+/* small devices*/
+@media (min-width: 0px) {
+    #homelogo {
+        width: 51px;
+        height: 37px;
+    }
+
+    #navbarSupportedContent {width: 85vw;}
+
+}
+
+/*medium devices*/
+@media (min-width: 768px) {
+    #homelogo {
+        width: 55px;
+        height: 40px;
+    }
+}
+
+/*large devices*/
+@media (min-width: 992px) {
+    #homelogo {
+        width: 55px;
+        height: 40px;
+    }
+}
+
+/*extra large devices*/
+@media (min-width: 1200px) {
+    #homelogo {
+        width: 55px;
+        height: 40px;
+    }
+
+}
+
+/*extra extra large devices*/
+@media (min-width: 1400px) {
+    #homelogo {
+        width: 55px;
+        height: 40px;
+    }
+}
