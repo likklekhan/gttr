@@ -74,7 +74,7 @@ a:active {text-decoration: none;}
 }
 
 .globalnavlogo {
-    background-image: url("/images/gtt_logo.png");
+    background-image: url("./images/gtt_logo.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
