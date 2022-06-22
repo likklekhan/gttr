@@ -23,12 +23,10 @@
             </div>
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <div class="d-md-block d-lg-none">
-                        <a class="person-fill" href="#"></a>
-                    </div>
+                    <a class="d-md-block d-lg-none person-fill" href="#"></a>
 
                     <!--small screens logo-->
-                    <a class="globalnavlogo position-absolute translate-middle-x top-0 start-50 d-block d-sm-block d-md-block d-lg-none mt-2" href="#"></a>
+                    <a class="globalnavlogo position-absolute translate-middle-x start-50 d-block d-sm-block d-md-block d-lg-none mt-1" href="#"></a>
 
                     <!--larger screens logo-->
                     <a class="globalnavlogo d-none d-sm-none d-md-none d-lg-block" href="#"></a>
@@ -42,14 +40,14 @@
                         </div>
                         <div class="offcanvas-body">
                             <nav class="navbar-nav me-auto navbb">
-                                <a class="nav-link topup" href="#">Top Up</a>
+                                <a class="nav-link topup color" href="#">Top Up</a>
                                 <a class="nav-link color" href="#">Mobile</a>
                                 <a class="nav-link color" href="#">Home</a>
                                 <a class="nav-link color" href="#">Why GTT</a>
                                 <a class="nav-link color" href="#">Support</a>
                                 <a class="nav-link color" href="#">Promotions</a>
                             </nav>
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav d-none d-sm-none d-md-none d-lg-block">
                                 <span>
                                     <a class="nav-link pe-1 color" href="#">My GTT</a>
                                 </span>
@@ -65,7 +63,7 @@
 
         <footer class="pt-2 globalfooternav">
             <nav class="container">
-                <div class="row row-cols-lg-5">
+                <div class="row row-cols-1 row-cols-lg-5">
                     <div class="col ">
                         <li><a href="#">Mobile</a></li>
                         <li><a href="#">Pre-paid Plans</a></li>
@@ -97,7 +95,7 @@
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Notices</a></li>
                     </div>
-                    <div class="col">
+                    <div class="col d-none d-sm-none d-md-none d-lg-block">
                         <a>Stay Connected With GTT</a>
                         <a>Facebook (icon)</a>
                         <a>YouTube (icon)</a>
@@ -105,18 +103,36 @@
                     </div>
                 </div>
             </nav>
+            <br>
             <section class="container">
-                <div>Find a GTT Store near you. Or call 0488 for support.<div>
+                <div class="row">
+                    <div class="col-2">
+                        <a class="footerlogo" href="#"></a>
+                    </div>
+                    <div class="col ms-3">
+                    <ul id="socials" class="m-0 p-0">
+                        <li class="me-3"><a class="fblogo" href="#"></a></li>
+                        <li class="me-3"><a class="iglogo" href="#"></a></li>
+                        <li class=""><a class="ytlogo" href="#"></a></li>
+                        <a href="#">
+                            <svg class="fill-red">
+                              <use xlink:href="./images/fb_logo.svg#example"></use>
+                            </svg>
+                        </a>
+                    </ul>
+                    <div class="extremelowfooter col">&copy; 2022 GTT</div>
+                </div>
+                <div id="storecall">Find a <a style="color: #ff8200;" href="#">GTT Store</a> near you. Or call 0488 for support.</div>
+                </div>
+                <br>
+                <div>
                     <a>Acceptable Use Policy</a>
                     <a>Terms & Conditions</a>
                     <a>Privacy Policy</a>
                     <a>General Regulations</a>
                 </div>
-                <div class="extremelowfooter">&copy; 2022 GTT</div>
+            
             </section>
-            <a class="ytlogo" href="#"></a>
-            <a class="fblogo" href="#"></a>
-            <a class="iglogo" href="#"></a>
         </footer>
 
 
@@ -125,7 +141,7 @@
 
 
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     </body>
 </html>
