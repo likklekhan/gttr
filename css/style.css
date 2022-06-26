@@ -92,9 +92,9 @@ a:active {text-decoration: none;}
 }
 
 #socials li {list-style: none; display: inline;}
+#socials :hover {text-decoration: none;}
 
-
-/* contents found in the images folder */
+/* external images */
 .hambtn {
     background-image: url("../images/list-icon-hamburger-menu.svg");
     background-repeat: no-repeat;
@@ -137,24 +137,6 @@ a:active {text-decoration: none;}
     height: 32px;
 }
 
-.ytlogo {
-    content: url(../images/yt-logo-icon.svg);
-    width: 16px;
-    height: 16px;
-}
-
-.fblogo {
-    content: url(../images/fb_logo.svg);
-    width: 16px;
-    height: 16px;
-}
-
-.iglogo {
-    content: url(../images/Instagram_Glyph_White.svg);
-    width: 16px;
-    height: 16px;
-}
-
 .footerlogo {
     content: url(../images/GTT-logo-white.png);
     width: 57px;
@@ -163,9 +145,23 @@ a:active {text-decoration: none;}
 
 
 .fill-red:hover {
-    fill: red;
+    fill: #ff8200;
 }
 
+.fill-red {
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+
+}
+
+footer section {
+    padding: 10px 0;
+    border-top: 1px solid #f8f8f8;
+}
+
+#storecall {padding-top: 10px;}
 
 
 /*x-small devices (portrait phones, less than 576px)*/
