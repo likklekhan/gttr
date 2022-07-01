@@ -10,7 +10,7 @@
     </head>
     <body>
         <header class="fixed-top">
-            <div class="d-none d-sm-none d-md-none d-lg-block" id="globalselector">
+            <div class="d-none d-sm-none d-md-none d-lg-block" id="indexslct">
                 <nav class="container navbar pt-0 pb-0 gt">
                     <div class="nav">
                         <a class="nav-link ms-2 py-0 px-1 globaltopnavselect" href="#" id="personal">PERSONAL</a>
@@ -21,18 +21,23 @@
                     </div>
                 </nav>
             </div>
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg" id="global-nav">
                 <div class="container">
-                    <a class="d-md-block d-lg-none person-fill" href="#"></a>
-
-                    <!--small screens logo-->
-                    <a class="globalnavlogo position-absolute translate-middle-x start-50 d-block d-sm-block d-md-block d-lg-none mt-1" href="#"></a>
-
-                    <!--larger screens logo-->
-                    <a class="globalnavlogo d-none d-sm-none d-md-none d-lg-block" href="#"></a>
-                    <a class="d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
-                        <div class="hambtn"></div>
+                    <a href="#" class="d-block d-sm-block d-md-block d-lg-none">
+                        <svg class="globalnavico">
+                            <use xlink:href="./images/account-person-fill.svg#acct"></use>
+                        </svg>
                     </a>
+                    <a class="gttlogocolour" href="#"></a>
+                    <button class="d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+                        <div>
+                            <a href="#">
+                                <svg class="globalnavico">
+                                    <use xlink:href="./images/list-icon-hamburger-menu.svg#hambtn"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </button>
                     <div class="offcanvas offcanvas-end" tabindex="1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContentLabel">
                         <div class="offcanvas-header">
                             <h3 class="offcanvas-title" id="navbarSupportedContentLabel">Personal</h3>
@@ -56,55 +61,73 @@
                     </div>
                 </div>
             </nav>
-            <div class="text-center notice_banner">
-            <a href="#">Click here for GTT customer notices<span class="chevronright"></span></a>
+            <div class="text-center" id="mainbanner">
+                <a href="#">Click here for GTT customer notices
+                    <span>
+                        <a href="#">
+                            <svg class="" id="chevico">
+                                <use xlink:href="./images/chevron-right.svg#chevright"></use>
+                            </svg>
+                        </a>
+                    </span>
+                </a>
             </div>
         </header>
 
         <footer class="pt-2 globalfooternav">
             <nav class="container">
                 <div class="row row-cols-1 row-cols-lg-5">
-                    <div class="col ">
-                        <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Pre-paid Plans</a></li>
-                        <li><a href="#">Post-paid Plans</a></li>
-                        <li><a href="#">Gyaff-A-Lot</a></li>
-                        <li><a href="#">International Roaming</a></li>
-                        <li><a href="#">Mobile Phones</a></li>
-                        <li><a href="#">GTT 4G LTE</a></li>
-                        <li><a href="#">SIM Application</a></li>
-                        <li><a href="#">SIM Vendors</a></li>
-                        <li><a href="#">Lend Me</a></li>
-                    </div>
-                    <div class="col">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">GTT Fibre+ Voice</a></li>
-                        <li><a href="#">GTT Fibre</a></li>
-                        <li><a href="#">Backup Battery</a></li>
-                        <li><a href="#">Landline Plans</a></li>
-                        <li><a href="#">DSL Plans</a></li>
-                    </div>
-                    <div class="col">
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Customer Feedback</a></li>
-                        <li><a href="#">Report an issue</a></li>
-                        <li><a href="#">Promotions</a></li>
-                    </div>
-                    <div class="col">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Notices</a></li>
-                    </div>
-                    <div class="col d-none d-sm-none d-md-none d-lg-block">
+                    <section class="col">
+                        <h3>
+                            <a href="#">Mobile</a>
+                        </h3>
+                        <ul>
+                            <li><a href="#">Pre-paid Plans</a></li>
+                            <li><a href="#">Post-paid Plans</a></li>
+                            <li><a href="#">Gyaff-A-Lot</a></li>
+                            <li><a href="#">International Roaming</a></li>
+                            <li><a href="#">Mobile Phones</a></li>
+                            <li><a href="#">GTT 4G LTE</a></li>
+                            <li><a href="#">SIM Application</a></li>
+                            <li><a href="#">SIM Vendors</a></li>
+                            <li><a href="#">Lend Me</a></li>
+                        </ul>
+                    </section>
+                    <section class="col">
+                        <h3><a href="#">Home</a></h3>
+                        <ul>
+                            <li><a href="#">GTT Fibre+ Voice</a></li>
+                            <li><a href="#">GTT Fibre</a></li>
+                            <li><a href="#">Backup Battery</a></li>
+                            <li><a href="#">Landline Plans</a></li>
+                            <li><a href="#">DSL Plans</a></li>
+                        </ul>
+                    </section>
+                    <section class="col">
+                        <h3><a href="#">Support</a></h3>
+                        <ul>
+                            <li><a href="#">Customer Feedback</a></li>
+                            <li><a href="#">Report an issue</a></li>
+                            <li><a href="#">Promotions</a></li>
+                        </ul>
+                    </section>
+                    <section class="col">
+                        <h3><a href="#">About</a></h3>
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Notices</a></li>
+                        </ul>
+                    </section>
+                    <section class="col d-none d-sm-none d-md-none d-lg-block">
                         <a>Stay Connected With GTT</a>
                         <a>Facebook (icon)</a>
                         <a>YouTube (icon)</a>
                         <a>Instagram (icon)</a>
-                    </div>
+                    </section>
                 </div>
             </nav>
             <br>
-            <section class="container break">
+            <section class="container">
                 <div class="row">
                     <div class="col-2">
                         <a class="footerlogo" href="#"></a>
@@ -113,38 +136,39 @@
                     <ul id="socials" class="m-0 p-0">
                         <li class="me-3">
                             <a href="#">
-                            <svg class="fill-red">
-                                <use xlink:href="./images/fb_logo.svg#example"></use>
-                            </svg>
-                        </a>
+                                <svg class="socialico">
+                                    <use xlink:href="./images/fb_logo.svg#example"></use>
+                                </svg>
+                            </a>
                         </li>
                         <li class="me-3">
                             <a href="#">
-                                <svg class="fill-red">
+                                <svg class="socialico">
                                     <use xlink:href="./images/Instagram_Glyph_White.svg#insta"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="">
                             <a href="#">
-                                <svg class="fill-red">
+                                <svg class="socialico">
                                     <use xlink:href="./images/yt-logo-icon.svg#yt"></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
-                    <div class="extremelowfooter col">&copy; 2022 GTT</div>
+                    <div class="col" id="cpyright">&copy; 2022 GTT</div>
                 </div>
-                <div id="storecall">Find a <a style="color: #ff8200;" href="#">GTT Store</a> near you. Or call <a href="tel:0488">0488</a> for support.</div>
+                <div id="storecall">Find a <a href="#" class="footcnt">GTT Store</a> near you. Or call <a href="tel:0488" class="footcnt">0488</a> for support.</div>
+                </div>
+                <div id="footend">
+                    <ul>
+                        <li><a>Acceptable Use Policy</a></li>
+                        <li><a>Terms & Conditions</a></li>
+                        <li><a>Privacy Policy</a></li>
+                        <li><a>General Regulations</a></li>
+                    </ul>
                 </div>
                 <br>
-                <div>
-                    <a>Acceptable Use Policy</a>
-                    <a>Terms & Conditions</a>
-                    <a>Privacy Policy</a>
-                    <a>General Regulations</a>
-                </div>
-            
             </section>
         </footer>
 

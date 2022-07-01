@@ -26,40 +26,159 @@
     font-display: auto;
 }
 
-* {font-family: gotham;}
+/*---reset---*/
+* {
+    font-family: gotham;
+    list-style: none;
+}
 
-body {padding-top: 115px;}
+a:link,
+    a:visited,
+        a:active {
+            text-decoration: none;
+}
 
-header {background-color: white;}
+* footer {
+    font-size: 14px;
+}
+/*--------------------*/
 
-footer {background-color: #004c97; color: #fff; list-style: none;}
+/*---navigation bar---*/
+.globalnavico {
+    fill: #000000c9;
+    width: 32px;
+    height: 32px;
+}
 
-a:link {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:active {text-decoration: none;}
+.gttlogocolour {
+    background-image: url("../images/gtt_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 52px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#indexslct {
+    background-color: #004c97;
+    font-size: 11px;
+}
+
+#personal {
+    color: #fff !important;
+    background-color: #ff8200;
+}
+
+#global-nav {
+    background-color: #fff;
+}
+
+.offcanvas-title {
+    color: #004c97; font-family: gothambold;
+}
 
 .btn-close:hover::after {
-        display: block;
-        content: '';
-        width: 100;
-        height: 2px;
-        background: #ff8200;
-        position: relative;
-        bottom: -14px;
-        left: 0;
+    display: block;
+    content: '';
+    width: 100;
+    height: 2px;
+    background: #ff8200;
+    position: relative;
+    bottom: -14px;
+    left: 0;
 }
+
+#mainbanner {
+    color: #fff;
+    background-color: #ff8200;
+    font-size: 14px;
+}
+
+#mainbanner :visited {
+    color: #fff;
+}
+
+#mainbanner :hover {
+    text-decoration: underline;
+}
+
+#chevico {
+    fill: #fff;
+    width: 11px;
+    height: 11px;
+    margin-bottom: 1px;
+}
+/*------*/
+
+body {
+    padding-top: 100px;
+    background-color: aqua !important;
+}
+
+/*---footer---*/
+footer {
+    background-color: #004c97;
+    color: #fff;
+}
+
+footer > section {
+    padding: 10px 0;
+}
+
+.socialico {
+    fill: #fff;
+    width: 16px;
+    height: 16px;
+}
+
+#socials :hover {
+    text-decoration: none;
+}
+
+#socials li {
+    display: inline;
+}
+
+#storecall {
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 6px;
+}
+
+#storecall > .footcnt {
+    color: #ff8200;
+}
+
+#cpyright {
+    font-size: 10px;
+    position: relative;
+    transform: translate(0, 75%);
+}
+
+#footend ul {
+    padding: 0;
+    margin: 0;
+}
+
+#footend li {
+    display: inline-block;
+    color: #ffffff94;
+    text-decoration: underline;
+    padding: 0 10px 3px 0;
+}
+/*---end of footer---*/
+
 
 .color {color: #004c97 !important;}
 
 .topup {color: #ff3381 !important;}
 
-#globalselector {
-    background-color: #004c97;
-    color: #fff !important;
-    font-size: 11px;
-}
 
-#personal {background-color: #ff8200; font-family: gotham;}
+
+
 #globalselector a:hover { font-weight: bolder;}
 
 .globaltopnavselect {color: #fff !important;}
@@ -71,101 +190,37 @@ a:active {text-decoration: none;}
 #navbarSupportedContent {height: 102vh;}
 #navbarSupportedContent {width: 85vw;}
 
-.notice_banner {
-    background-color: #f8f8f8;
-    color: #004c97;
-    font-size: 14px;
-}
 
-.notice_banner :visited {color: #004c97;}
-.notice_banner :hover {text-decoration: underline;}
-
-.offcanvas-title {color: #004c97; font-family: gothambold;}
 
 .globalfooternav a{color: #fff;}
 .globalfooternav a:hover {color: #fff; text-decoration: underline;}
 
-#storecall {font-size: 13px;}
-
-.extremelowfooter {
-    font-size: 11px;
-}
-
-#socials li {list-style: none; display: inline;}
-#socials :hover {text-decoration: none;}
-
-/* external images */
-.hambtn {
-    background-image: url("../images/list-icon-hamburger-menu.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    width: 32px;
-    height: 32px;
-}
-
-.globalnavlogo {
-    background-image: url("../images/gtt_logo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 52px;
-    height: 40px;
-    top: 0;
-}
-
-/* template
-.globalnavlogo {
-    background-image: url("../images/gtt_logo.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    width: 70px;
-    height: 50px;
-}*/
 
 
-.chevronright {
-    content: url(../images/chevron-right.svg);
-    width: 10px;
-    height: 10px;
-    margin-bottom: -1px;
-}
 
-.person-fill {
-    content: url(../images/account-person-fill.svg);
-    width: 32px;
-    height: 32px;
-}
+
+/*---svg styles---*/
+
+
+
+
+
+
+/*---end of svg styles---*/
+
+/*---external images---*/
+
 
 .footerlogo {
     content: url(../images/GTT-logo-white.png);
     width: 57px;
     height: 45px;
 }
-
-
-.fill-red:hover {
-    fill: #ff8200;
-}
-
-.fill-red {
-    margin-top: -8px;
-    width: 16px;
-    height: 16px;
-    fill: #fff;
-
-}
-
-footer section {
-    padding: 10px 0;
-    border-top: 1px solid #f8f8f8;
-}
-
-#storecall {padding-top: 10px;}
+/*---end of external images---*/
 
 
 /*x-small devices (portrait phones, less than 576px)*/
-/*no media query for 'xs' since tis is the default in Bootstrap*/
+/*no media query for 'xs' since this is the default in Bootstrap*/
 
 /* small devices (landscape phones 576px and up)*/
 @media (min-width: 576x) {
@@ -187,7 +242,15 @@ footer section {
         bottom: 0;
         left: 0;
        }
+
+       .gttlogocolour {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+       }
 }
+
 
 /*x-large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
@@ -196,3 +259,13 @@ footer section {
 /*xx-large devices (larger desktops -and tv's- , 1400px and up)*/
 @media (min-width: 1400px) {
 }
+
+/*---template for adding images using css---
+[#id or .class] {
+    background-image: url("[link-to-image]");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: [set];
+    height: [set];
+}*/
